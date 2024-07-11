@@ -94,7 +94,7 @@ if __name__ == '__main__':
             cityname = str
             #print(cityname)
             say("wait a moment....")
-            weather_data = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={cityname}&units=imperial&APPID={"253682c0bd759acfb4255d4aa08c3dd7"}")
+            weather_data = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={cityname}&units=imperial&APPID=253682c0bd759acfb4255d4aa08c3dd7")
             data = weather_data.json()
             main = data['main']
             temperature = main['temp']
